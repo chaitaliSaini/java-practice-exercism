@@ -21,8 +21,8 @@ class SpaceAge {
         return calculateYears(earthOrbitalPeriod);
     }
 
-    double calculateYears(double earthYears) {
-        return Math.round((getSeconds() / (earthYears * 31557600.0)) * 100.0) / 100.0;
+    double calculateYears(double orbitalPeriod) {
+        return Math.round((getSeconds() / (orbitalPeriod * 31557600.0)) * 100.0) / 100.0;
     }
 
     double onMercury() {
